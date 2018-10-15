@@ -30,7 +30,7 @@ Now let’s look at the drawbacks of sudo. I already mentioned syntax pollution.
 
 Another drawback, even more important, is that sudo allows hidden privilege elevation. Imagine that you run a script without sudo which makes you think that the script will be executed without privilege elevation. However, the script contains a command starting with sudo. If sudo still remembers the password from when it was entered earlier, the script will be executed without asking the password, and the command inside the script will be executed with elevated privileges without you knowing this. To be fair, I must say that the sudo password memory can be turned off by configuration [2].
 
-Let’s conclude this research. Sudo has its benefits and drawbacks. For me, the former do not outweigh the latter. That is why I prefer the su command. Yet, it is not perfect either and I will continue to search for a perfect one.
+Let’s conclude this research. Sudo has its benefits and drawbacks. For me, the latter outweigh the former. That is why I prefer the su command. Yet, it is not perfect either and I will continue to search for a perfect one.
 
 PS There are no "as far as I know" or "if I am not mistaken" in this text. Yet, they are actually implied in every sentence. My relationship with Unix has quite long history, but it was not very diverse. So, I must have missed something small or big.
 
