@@ -1,6 +1,6 @@
 # Sudo in 2018
 
-If you use Linux or other Unix-like operating systems then you often see shell commands starting with the word sudo. Sudo is a command that executes its argument with elevated privileges, usually the privileges of root. The idea is that sudo allows a non-root user to do some root actions without switching to root. Personally, I don't like sudo. The reason is that it pollutes the syntax of shell commands. Imagine that you would need to put sudo at the beginning of every line in your Java code. Would you like that? I wouldn't. However, I don't want to compromise security either. So, I decided to research why and how to use sudo nowadays.
+If you use Linux or other Unix-like operating systems then you often see shell commands starting with the word sudo. Sudo is a command that executes its argument with elevated privileges, usually the privileges of root. The idea is that sudo allows a non-root user to do some root actions without switching to root. Personally, I don't like sudo. The reason is that it pollutes the syntax of shell commands. Imagine that you would need to put sudo at the beginning of every line in your Java code. Would you like that? I wouldn't. However, I don't want to compromise security either. So, I decided to research whether it is worth using sudo nowadays.
 
 Let's start with the sudo goals. Sudo attempts to address four topics:
 - delegating privileges in a multi-user environment
