@@ -14,7 +14,7 @@ Let's start with the first topic and expand it. When a machine has a user and ad
 
 Unlike the first topic, the second one is actual and important. However, it can be addressed by the su command too. Switching to root and back with su allows to elevate privileges only when necessary.
 
-The least privilege principle is as important as the previous topic. When you install an ordinary package, e.g. a library, you don't want the installation code to have access to /dev/mem or /dev/sda. You want it to only be able to create and modify files in certain directories. Unfortunately, sudo doesn't provide that in default configurations:
+The least privilege principle is as important as the previous topic. When you install an ordinary package, e.g. a library, you don't want the installation code to have access to /dev/mem or /dev/sda. You want it to only be able to create and modify files in certain directories. Unfortunately, sudo doesn't provide that in default configurations of popular Linux distributions:
 - Debian may not have sudo installed by default [1]
 - Ubuntu has sudo by default, but it is configured to elevate to the full privileges of root
 
